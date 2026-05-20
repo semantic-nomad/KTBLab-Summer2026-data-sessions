@@ -49,20 +49,32 @@ This aligns with how knowledge graphs and RDF/OWL work:
 ```
 Product_A --made--> Sale_1
 Sale_1 --during--> Q1
-Sale_1 --saleAmount--> ^100 USD
+Sale_1 --saleAmount--> 100
 
 Product_A --made--> Sale_2
 Sale_2 --during--> Q2
-Sale_2 --saleAmount--> ^150 USD
+Sale_2 --saleAmount--> 150
+
+Product_A --made--> Sale_3
+Sale_3 --during--> Q3
+Sale_3 --saleAmount--> 120
 
 Product_B --made--> Sale_4
 Sale_4 --during--> Q1
-Sale_4 --saleAmount--> ^200 USD
+Sale_4 --saleAmount--> 200
+
+Product_B --made--> Sale_5
+Sale_5 --during--> Q2
+Sale_5 --saleAmount--> 180
+
+Product_B --made--> Sale_6
+Sale_6 --during--> Q3
+Sale_6 --saleAmount--> 210
 ```
 
 Can also visualize as a graph:
 ```mermaid
-flowchart LR
+flowchart TD
 
 Product_A --made--> Sale_1
 Sale_1 --during--> Q1
@@ -72,9 +84,21 @@ Product_A --made--> Sale_2
 Sale_2 --during--> Q2
 Sale_2 --saleAmount--> 150
 
+Product_A --made--> Sale_3
+Sale_3 --during--> Q3
+Sale_3 --saleAmount--> 120
+
 Product_B --made--> Sale_4
 Sale_4 --during--> Q1
 Sale_4 --saleAmount--> 200
+
+Product_B --made--> Sale_5
+Sale_5 --during--> Q2
+Sale_5 --saleAmount--> 180
+
+Product_B --made--> Sale_6
+Sale_6 --during--> Q3
+Sale_6 --saleAmount--> 210
 ```
 
 It does get complicated quickly if we add a few types, for example.
