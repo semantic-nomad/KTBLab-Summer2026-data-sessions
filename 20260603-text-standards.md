@@ -9,7 +9,7 @@
 * **Location:** Field Site Alpha
 * **Classification:** Mollisol (Order)
 * **Coordinates:** Latitude -40.35, Longitude 175.61
-* **Horizons (The nested array/list part):**
+* **Horizons:**
   * **Horizon 1:** Name: "A", Depth: 0–15 cm, SOC (Soil Organic Carbon): 3.2%
   * **Horizon 2:** Name: "Bw", Depth: 15–45 cm, SOC: 1.1%
 * **Site Notes:** "Crumb structure prominent; high root density, especially in top 10cm."
